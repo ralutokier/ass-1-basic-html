@@ -1,1 +1,84 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic HTML Layout</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #d6d317;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #3cc059;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .left-side {
+        padding: 100px;
+        margin: 10px;
+        height: 400px;
+        background-color: #f00;
+    }
+    .right-side {
+        padding: 100px;
+        margin: 10px;
+        height: 400px;
+        background-color: rgb(70, 8, 51);
+    }
+    .main-content {
+        padding: 20px;
+        margin: 10px;
+        height: 550px;
+        background-color: rgb(66, 203, 207);
+        flex-basis: calc(50% - 40px);
+        text-align: center;
+    }
+    footer {
+        padding: 20px;
+        margin: 10px;
+        background-color: #131eb9;
+        color: #fff;
+        text-align: center;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h1>Navigation Menu</h1>
+    </nav>
+    <div class="container">
+        <div class="left-side">
+            <h2>  Side Content</h2>
+        </div>
+        <div class="main-content">
+            <h2>Main Content</h2>
+        </div>
+        <div class="right-side">
+            <h2>  Side Content</h2>
+        </div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
